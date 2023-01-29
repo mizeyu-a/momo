@@ -22,18 +22,18 @@ const MMSLS = [
 
 const MMSLS = [
   
-    "https://www.maimemo.com/share/page?uid=21014894&pid=8279d91920de82cb8f165f1d4c141841&tid=863d4c7faceadd06a65b5558c90b1ed6",
+    "https://www.maimemo.com/share/page?uid=21014894&pid=abef5e616a9f61eafdacfaa3961f9e42&tid=4e1db9457362f372da8796d990eaa2c0",
 ]
-  /**
-   * 生成随机数字
-   * @param {number} min 最小值（包含）
-   * @param {number} max 最大值（不包含）
-   */
-  function randomNumber(min = 0, max = 100) {
-    return Math.min(Math.floor(min + Math.random() * (max - min)), max);
-  }
-  const MMSL_random = MMSLS[randomNumber(0, MMSLS.length)];
-  
-  module.exports = {
-    MMSL_random
-  }
+/**
+ * 生成随机数字
+ * @param {number} min 最小值（包含）
+ * @param {number} max 最大值（不包含）
+ */
+function randomNumber(min = 0, max = 100) {
+  return Math.min(Math.floor(min + Math.random() * (max - min)), max);
+}
+const MMSL_random = MMSLS[randomNumber(0, MMSLS.length)];
+
+module.exports = {
+  MMSL_random
+}
